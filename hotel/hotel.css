@@ -1,0 +1,198 @@
+body{
+    background: #F6F8FB;
+}
+.firstarea{
+    height:11vw;
+}
+.toparea{
+    position:relative;
+    background: #F6F8FB;
+    /* padding: min(1em,8%); */
+    text-align:center;
+    color:rgb(128, 9, 9);
+    text-align:right;
+
+}
+.toparea .logoarea{
+    position:relative;
+    text-align:left;
+    padding-left:15px;
+
+}
+.toparea .logoarea img{
+    width:135%;
+    height:100%;
+    text-align:left;
+
+}
+
+.menuarea .navbar{
+    text-align:right;
+    margin-top:5.5rem;
+    margin-left:153px;
+}
+ #navbarSupportedContent  ul li a{
+    color:#fd0000;
+    font-size:1rem;
+    margin-left:20px;
+    opacity:0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-link:hover,
+.nav-link:hover i {
+    text-decoration: underline !important;
+    text-decoration-color: skyblue !important;
+
+    color:#00ACFF !important;
+    
+}
+.menuarea .dropdown-item:hover{
+    text-decoration: underline !important;
+    text-decoration-color: skyblue !important;
+
+    color:#00ACFF !important;
+}
+
+.searcharea .btn:hover{
+    background: #fd0000;
+   
+}
+
+
+
+.searcharea{
+   
+   position:relative;
+    width:340px;
+    transform:translate(80px,-10px);
+    
+    margin-left:0px;
+    margin-top:0px;
+    padding-top:10px;
+    /* padding-right:10px; */
+    
+
+}
+.searcharea .btn{
+    height:30px;
+    width:60px;
+    margin-left:0;
+}
+.searcharea .form-control{
+    height:30px;
+}
+.profilearea{
+    position: relative;
+    text-align:right;
+    margin-left:940px;
+    margin-top:0px;
+    transform:translate(150px,-150px);
+    padding-top:10px;
+    padding-right:10px;
+    
+}
+.profilearea table{
+    text-align:center;
+    margin-left:75px;
+}
+.profilearea table tr td{
+    text-align:end;
+    padding-left:20px;
+}
+.profilearea table tr td .fa{
+    color:#fd0000;
+}
+
+
+
+.lastarea{
+    padding-top:25px;
+    text-align:start;
+    margin-top:50px;
+    background: linear-gradient(1deg, rgba(253, 0, 0, 0.75) 0%, rgba(58, 199, 199, 0.75) 100%);
+    /* color:#fd0000; */
+
+}
+.lastarea ul li a{
+    color:white;
+    text-decoration:none;
+    font-family:mv boli;
+    font-weight:bold;
+   x
+   
+}
+.lastarea ul{
+    list-style-type:none;
+}
+.quick-link p{
+    border-left:solid 3px #fd0000;
+    margin-left:30px;
+    margin-bottom:30px;
+    padding-left:10px;
+    text-shadow:1px 1px .07px black;
+    font-size:14px;
+    opacity:0.8;
+}
+ 
+.lastarea .text-guide h3{
+    color:skyblue;
+    font-weight:bold;
+    font-family:mv boli;
+    text-shadow:1px 1px 5px #0d0d0d;
+    margin-left:50px;
+    padding-left:20px;
+    border-left:solid 5px #fd0000;
+
+}
+.lastarea .text-guide p{
+    padding-top:20px;
+    color:white;
+    padding-left:50px;
+    font-family:mv boli;
+
+
+}
+.lastarea ul li a:hover{
+    color:black;
+}
+.footerarea hr{
+    color:skyblue;
+    width:80%;
+    text-align:center;
+    height:5px;
+}
+.footerarea p{
+    color:black;
+    font-size:18px;
+    font-family:mv boli;
+    text-align:center;
+}

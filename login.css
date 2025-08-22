@@ -1,0 +1,129 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('login3.jpg'); /* Replace with your image path */
+  background-size: cover;
+ 
+  background-repeat: no-repeat; /* Prevents tiling */
+}
+.account-area{
+    width:28rem;
+    /* text-align:center; */
+    margin-top:1em;
+    margin-right:10%;
+
+
+    /* background: red; */
+    
+}
+.acc{
+    float:left;
+    margin-left:2%;
+    /* border:solid 2px black; */
+    opacity:0.9;
+    border-radius:20px;
+    /* box-shadow:px px 10px black; */
+    
+
+}
+.acc:hover{
+    /* border:solid 2px #fd0000; */
+    box-shadow:1px 1px 10px #fd0000;
+
+
+}
+
+.account-area table tr td{
+    border:solid 2px black;
+    padding:0.3em;
+    border-radius:20px;
+    font-size:1.1rem;
+
+}
+.loginarea{
+    text-align:center;
+    /* background: red; */
+    width:55vw;
+    margin:0 auto;
+    margin-top:4em;
+    margin-bottom:4em;
+    box-shadow:0px 0px 5px black;
+    border-radius:10px;
+}
+.loginbox{
+    text-align:left;
+    padding:1vw;
+}
+.loginbox h2{
+    text-align:center;
+    font-size:3rem;
+    margin:0;
+    color:white;
+    letter-spacing: 4px;
+    font-weight:bold;
+    font-family:"Federant", serif;
+    text-shadow: 2px 2px 0 #fd0000, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+
+}
+.form-label{
+    text-shadow:1px 1px 10px black;
+    color:white;
+    font-size:1.1em;
+}
+.form-text{
+    color:white;
+    text-shadow:2px 1px 10px black;
+    
+}
+.form-check-label{
+    color:white;
+    text-shadow:2px 1px 10px black;
+
+}
+.loginbox .mb-3{
+    padding-left:15%;
+}
+.form-check{
+    margin-left:1.4em;
+}
+.loginbox button{
+    border-radius:1em;
+    margin-left:5.5rem;
+    width:7em;
+    
+}
+.loginbox button:hover{
+    background: #fd0000;
+}
+.form-control{
+    width:85%;
+
+}
+.login-option{
+    float:left;
+    /* width:30vw; */
+    margin-left:13%;
+    border:solid 2px black;
+    border-radius:1em;
+    padding: 0.3rem;
+    background: rgb(49, 48, 48);
+    opacity:0.5;
+    margin-top:2%;
+    
+
+}
+.login-option:hover{
+    background: blue;
+}
+
+.second{
+    /* margin-left:10%;; */
+}
+.fa{
+    color:blue;
+    border-radius:50%;
+    background: white;
+    padding:7px;
+    /* padding-right:10px; */
+
+}

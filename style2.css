@@ -1,0 +1,197 @@
+.navbar img{
+    width:15%;
+    height:min-content;
+}
+#navbarLight ul li a{
+    color:#fd0000;
+}
+#navbarLight ul li a:hover{
+    color:rgb(4, 184, 254);
+    text-decoration:underline;
+    /* font-weight:bold; */
+    
+}
+.video-bg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.video-overlay-text {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.video-overlay-text h1 {
+    font-size: 4vw; 
+    text-shadow: 2px 1px 8px rgba(0, 0, 0, 0.7);
+    margin: 0;
+    font-family:mv boli;
+}
+
+.highlight {
+    color: #fd0000;
+    text-shadow: none;
+}
+.map-area{
+    background-image:url('map2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+    height:50vw;
+
+
+}
+.boxarea{
+    /* width: 1280px; */
+    
+    color:white;
+}
+.boxarea h1{
+    color:white;
+    text-align:center;
+    margin:0;
+    margin-top:6rem;
+    font-family:mv boli;
+    text-shadow:1px 1px 3px #fd0000;
+}
+.statearea{
+    width:90%;
+    margin:0 auto;
+    height:70%;
+    /* border:solid 2px red; */
+    /* background: yellow; */
+    margin-top:10%;
+    overflow:scroll;
+}
+.card{
+    width:20vw;
+    float:left;
+    margin-left:10%;
+    margin-top:4%;
+    border-top-right-radius:10%;
+    border-bottom-left-radius:10%;
+
+}
+.card img{
+    width:100%;
+    height:10vw;
+    border-top-right-radius:10%;
+
+}
+.card-body{
+    padding:0.5em;
+}
+.card-body h5{
+    margin-left:0;
+    margin:0;
+    padding:0;
+    border-left:solid 0.11em #fd0000;
+    padding-left:5%;
+}
+.card-title{
+    margin:0;
+    padding:0;
+    font-size:1.5vw;
+}
+
+.card2{
+    margin:0 auto;
+    /* height:60vh; */
+    margin-top:20%;
+    box-shadow:0px 0px 10px 0px rgb(118, 113, 113);
+    
+}
+.g-0 img{
+    margin-top:2rem;
+}
+.card-body2 h5{
+    border-left:3px solid #fd0000;
+    color:black;
+    padding-left:1rem;
+    font-size:3vw;
+}
+.card-body2 p{
+    font-family:mv boli;
+    font-size:1.5vw;
+
+}
+.card-text p{
+    font-size:5vw;
+}
+.btn{
+    width:8rem;
+    font-size:1rem;
+    /* height:vh; */
+}
+
+
+.lastarea{
+    padding-top:25px;
+    text-align:start;
+    margin-top:50px;
+    background: linear-gradient(1deg, rgba(253, 0, 0, 0.75) 0%, rgba(58, 199, 199, 0.75) 100%);
+    /* color:#fd0000; */
+
+}
+.lastarea ul li a{
+    color:white;
+    text-decoration:none;
+    font-family:mv boli;
+    font-weight:bold;
+   x
+   
+}
+.lastarea ul{
+    list-style-type:none;
+}
+.quick-link p{
+    border-left:solid 3px #fd0000;
+    margin-left:30px;
+    margin-bottom:30px;
+    padding-left:10px;
+    text-shadow:1px 1px .07px black;
+    font-size:14px;
+    opacity:0.8;
+}
+ 
+.lastarea .text-guide h3{
+    color:skyblue;
+    font-weight:bold;
+    font-family:mv boli;
+    text-shadow:1px 1px 5px #0d0d0d;
+    margin-left:50px;
+    padding-left:20px;
+    border-left:solid 5px #fd0000;
+
+}
+.lastarea .text-guide p{
+    padding-top:20px;
+    color:white;
+    padding-left:50px;
+    font-family:mv boli;
+
+
+}
+.lastarea ul li a:hover{
+    color:black;
+}
+.footerarea hr{
+    color:skyblue;
+    width:80%;
+    text-align:center;
+    height:5px;
+}
+.footerarea p{
+    color:black;
+    font-size:18px;
+    font-family:mv boli;
+    text-align:center;
+}
