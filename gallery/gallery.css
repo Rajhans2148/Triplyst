@@ -20,23 +20,23 @@
     background-position: center;
     background-attachment: fixed;
     /* position:relative; */
-     width:18rem;
+     width:100%;
     height:52vw;
     /* top:10%; */
     /* z-index:100; */
     /* background: black; */
 }
 .bg-text{
-    left:19%;
+    /* left:19%;s */
     font-size:1.7vw;
     
     position:relative;
     font-family:mv boli;
     text-shadow:0px 0px 10px black;
     color:white;
-    position: fixed;
-    padding-top:4%;
-    justify-content:center;
+    position:static;
+    padding-top:14%;
+    justify-content:bottom;
     text-align:center;
 
 
@@ -132,36 +132,122 @@
     /* z-index:-100; */
 
 }
+
+
+
+
 .img-tree{
     background-image:url('tree.webp');
     background-repeat:no-repeat;
     background-size:contain;
-    margin-left:5%;
-    /* background-position: center; */
-    /* text-align:center; */
-    /* background: red; */
-    height:35vw;
+    /* margin-left:5%; */
+    height:45vw;
     width:70%;
 
 }
 .box-tree{
-    margin-top:20%;
-    height:90%;
+    margin-top:20%; 
+    height:160%;
     width:100%;
-    background: pink;
+    /* background: pink; */
+    position:relative;
 }
+
+.vertical-line1{
+
+    position: absolute;
+    left: 10%;              /* screen ke beech me */
+    /* height: 16rem;          
+    border-left: 2px solid #000;
+    transform:translate(0.3vw,-3.2vw); */
+
+}
+.vertical-line1 img{
+    width:40%;
+    transform:translate(-2.6vw,-3.2vw);
+
+}
+
+.vertical-line2{
+    position:absolute;
+    left:27.3%;
+    height:80%;
+    border-left: 2px solid #000;
+    transform:translate(0vw,-4vw);
+    z-index:-10;
+}
+.vertical-line3{
+    position:absolute;
+    left:53%;
+    height:30rem;
+    border-left: 2px solid #000;
+    transform:translate(0vw,-0.4vw);
+
+}
+.vertical-line4{
+    position:absolute;
+    left:79%;
+    height:37rem;
+    border-left: 2px solid #000;
+    transform:translate(0vw,-0.5vw);
+    z-index:-10;
+
+
+
+}
+.vertical-line5{
+    position:absolute;
+    left:95%;
+    
+    /* border-left: 2px solid #000;
+    transform:translate(0.2vw,-2.3vw); */
+
+
+
+}
+.vertical-line5 img{
+    width:270%;
+    transform:translate(-3vw,-3.2vw);
+}
+
+/* .box-img{
+    width:25%;
+    height:35%;
+    background: red;
+    float:left;
+    margin-left:5%;
+    margin-top:10%;
+} */
+.pic1{
+    height:16vw;
+    width:17vw;
+    margin-left:15%;
+    background: white;
+    text-align:center;
+    margin-top:2%;
+    float:left;
+    z-index:1000;
+    border:solid 1px black; 
+
+}
+.box-tree .pic1:nth-child(odd){
+  background-color: white; /* 2, 4, 6... pe apply hoga */
+  color: red;
+  /* margin-left:22%; */
+  margin-top:5%;
+  transform:translate(2vw,3vw);
+}
+
+.pic1 img{
+    height:90%;
+    width:98%;
+    text-align:center;
+}
+
+
 .social-media{
     margin:0 auto;
     text-align:center;
     background: black;
     
 }
-.box-img{
-    width:30%;
-    height:30%;
-    background: red;
-    float:left;
-    margin-left:5%;
-    margin-top:10%;
-}
-
