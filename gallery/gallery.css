@@ -371,6 +371,99 @@
         margin-top:10%;
         margin-bottom:2%;
     }
+    h3{
+        color:darkskyblue;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin:0 auto;
+        margin-top:12%;
+        margin-left:20%;
+
+    }
+    .story{
+        /* color:darkblue; */
+        margin-top:30%;
+        margin-left:20%;
+    }
+}
+
+
+
+
+
+
+
+.boxarea h1{
+    color:dark-skyblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:0 auto;
+    margin-top:5%;
+    padding-left:7%;
+    /* font-size:1rem; */
+}
+.boxarea h1::after {
+  content: "";
+  display: block;
+  width: 80px;              /* line ki length */
+  margin-top: 8px;
+  border-bottom: 2px solid black;
+}
+    
+
+
+
+
+.box-style{
+  
+
+
+/* Inspired by this pen by Pieter Biesemans https://codepen.io/pieter-biesemans/pen/BQBWXX and My Mother Before Me project http://mymotherbeforeme.com/ */
+
+body {
+  font-family: Hepta Slab, sans-serif;
+  font-weight: 500;
+  background: #efecdb;
+  color: #5D4037;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* hide scrollbar */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+.external {
+  overflow: hidden;
+  height: 100vh;
+}
+.horizontal-scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vh;
+  transform: rotate(-90deg) translate3d(0,-100vh,0);
+  transform-origin: right top;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  height: 100vw;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  padding-bottom: 10rem;
+
+  /* 👇 Scrollbar hide karne ke liye */
+  scrollbar-width: none;   /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+}
+
+.horizontal-scroll-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 
@@ -381,7 +474,93 @@
 
 
 
-.box-style{
+
+
+
+
+
+
+.img-wrapper {
+  transform: rotate(90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  transform-origin: 50% 50%;
+  transform: rotate(90deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
+  transition: 1s;
+}
+
+.img-wrapper:hover {
+ min-height: 65vh;
+}
+
+.slower {
+  transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(-10vh);
+}
+.slower1 {
+  transform: rotate(90deg) translateZ(-.25px) scale(1.05) translateX(0%) translateY(8vh);
+}
+.slower2 {
+  transform: rotate(90deg) translateZ(-.3px) scale(1.3) translateX(0%) translateY(2vh);
+}
+.slower-down {
+  transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(16vh) ;
+}
+.faster {
+  transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(0%) translateY(14vh) ;
+}
+.faster1 {
+  transform: rotate(90deg) translateZ(.05px) scale(0.8) translateX(0%) translateY(10vh) ;
+}
+.fastest {
+  transform: rotate(90deg) translateZ(.22px) scale(0.7) translateX(-10vh) translateY(-15vh) ;
+}
+.vertical {
+   transform: rotate(90deg) translateZ(-.15px) scale(1.15) translateX(0%) translateY(0%) ;
+}
+.last {
+  transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(25vh) translateY(-8vh) ;
+}
+.scroll-info, header {
+  position: absolute;
+  left: 1rem;
+}
+
+
+header {
+  bottom: 1rem;
+}
+.scroll-info {
+  top: 1rem;
+}
+a {
+  color: inherit;
+  font-weight: 500;
+  
+}
+h1 {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.img-wrapper a {
+  overflow: hidden;
+  display: block;
+  padding: 1vh ;
+  background: #efecdb;
+  box-shadow: 0 10px 50px #5f2f1182;
+}
+img {
+  max-width: 45vh;
+  max-height: 50vh;
+  transition: .5s;
+  vertical-align: top;
+  filter: saturate(40%) sepia(30%) hue-rotate(5deg);
+}
+a:hover img {
+  filter: none;
+}
 h1::after {
   content: "";
   display: block;
@@ -389,139 +568,6 @@ h1::after {
   margin-top: 8px;
   border-bottom: 2px solid black;
 }
-
-h1{
-    color:dark-skyblue;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin:0 auto;
-    margin-top:10%;
-    
-    
-
-
-}
-html,body {
-  height:100%;
-  min-height:100%;
-  margin:0;
-}
-body {
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background-image:url(https://images.unsplash.com/photo-1499088513455-78ed88b7a5b4?crop=entropy&cs=srgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODE0OTQ3MzM&ixlib=rb-4.0.3&q=85);
-  background-size:cover;
-}
-.thumbs {
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  width:500px;
-  max-width:100%;
-  > a {
-    max-width:150px;
-    height:150px;
-    margin:10px;
-    overflow:hidden;
-    border-radius:5px;
-    box-shadow:0 0 0 3px white, 0 5px 8px 3px rgba(black, 0.6);
-    img {
-      transform:scale(1);
-      transition:transform 0.1s ease-in-out;
-      filter:grayscale(50%);
-      min-width:100%;
-      min-height:100%;
-      max-width:100%;
-      max-height:100%;
-    }
-    &:hover {
-      img {
-        transform:scale(1.1);
-        filter:grayscale(0%);
-      }
-    }
-  }
-}
-
-.lightbox {
-  position:fixed;
-  background:rgba(black,0.5);
-  backdrop-filter:blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  height:100%;
-  width:100%;
-  left:0;
-  top:0;
-  transform:translateY(-100%);
-  opacity:0;
-  transition:opacity 0.5s ease-in-out;
-  &:has(div:target) {
-    transform:translateY(0%);
-    opacity:1;
-  }
-  a.nav {
-    text-decoration:none;
-    color:white;
-    font-size:40px;
-    text-shadow:0 2px 2px rgba(black,0.8);
-    opacity:0.5;
-    font-weight:200;
-    &:hover {
-      opacity:1;
-    }
-  }
-  .target {
-    position:absolute;
-    height:100%;
-    width:100%;
-    display:flex;
-    transform:scale(0);
-    align-items:center;
-    justify-content:space-between;
-    *:first-child,*:last-child {
-      flex:0 0 100px;
-      text-align:center;
-      @media all and (max-width:600px){
-        flex:0 0 50px;
-      }
-    }
-    .content {
-      transform:scale(0.9);
-      opacity:0;
-      flex:1 1 auto;
-      align-self: center;
-      max-height:100%;
-      min-height:0;
-      // max-width:calc(100% - 200px);
-      min-width:0;
-      border-radius:5px;
-      overflow:hidden;
-      box-shadow:0 0 0 3px white, 0 5px 8px 3px rgba(black, 0.6);
-      transition:transform 0.25s ease-in-out,opacity 0.25s ease-in-out;
-      img {
-        min-width:100%;
-        min-height:100%;
-        max-width:100%;
-        max-height:calc(100vh - 40px);
-        display:block;
-        margin:0;
-      }
-    }
-    &:target {
-      transform:scale(1);
-      .content {
-        transform:scale(1);
-        opacity:1;
-      }
-    }
-  }
-  .close {
-    position:absolute;
-    right:10px;
-    top:10px;
-  }
-}
-
 }
 
 
@@ -558,7 +604,7 @@ body {
   margin-left:50%;
   transform: translate(-50%, -50%);
   box-shadow: 
-    0 0 10px #0002,
+    0 0 10px rgba(242, 238, 238, 0.133),
     0 20px 40px -20px #0004;
   width: var(--size);
   height: var(--size);
@@ -709,4 +755,72 @@ body {
     growHorizontal 2s 20s 1,
     moveHorizontal 16s 21.5s 1;
   animation-fill-mode: forwards;
+}
+
+
+
+
+
+/* footer area */
+.lastarea{
+    padding-top:25px;
+    text-align:start;
+    margin-top:50px;
+    background: linear-gradient(1deg, rgba(253, 0, 0, 0.75) 0%, rgba(58, 199, 199, 0.75) 100%);
+    /* color:#fd0000; */
+
+}
+.lastarea ul li a{
+    color:white;
+    text-decoration:none;
+    font-family:mv boli;
+    font-weight:bold;
+   x
+   
+}
+.lastarea ul{
+    list-style-type:none;
+}
+.quick-link p{
+    border-left:solid 3px #fd0000;
+    margin-left:30px;
+    margin-bottom:30px;
+    padding-left:10px;
+    text-shadow:1px 1px .07px black;
+    font-size:14px;
+    opacity:0.8;
+}
+ 
+.lastarea .text-guide h3{
+    color:skyblue;
+    font-weight:bold;
+    font-family:mv boli;
+    text-shadow:1px 1px 5px #0d0d0d;
+    margin-left:50px;
+    padding-left:20px;
+    border-left:solid 5px #fd0000;
+
+}
+.lastarea .text-guide p{
+    padding-top:20px;
+    color:white;
+    padding-left:50px;
+    font-family:mv boli;
+
+
+}
+.lastarea ul li a:hover{
+    color:black;
+}
+.footerarea hr{
+    color:skyblue;
+    width:80%;
+    text-align:center;
+    height:5px;
+}
+.footerarea p{
+    color:black;
+    font-size:18px;
+    font-family:mv boli;
+    text-align:center;
 }
