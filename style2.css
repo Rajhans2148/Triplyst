@@ -10,7 +10,7 @@
     color:#fd0000;
     font-size:1.2rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* padding-bottom:20%; */
+    
 }
 #navbarLight ul li a:hover{
     color:rgb(4, 184, 254);
@@ -61,7 +61,7 @@
     text-shadow: none;
 }
 .map-area{
-    background-image:url('map2.png');
+    background-image:url('map5.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -98,7 +98,9 @@
     overflow:scroll;
 }
 .card{
-    width:20em;
+    width:20vw;
+    height:15vw;
+    
     float:left;
     margin-left:10%;
     margin-top:4%;
@@ -120,7 +122,7 @@
 }
 .card img{
     width:98%;
-    height:8em;
+    height:90%;
     /* border-top-right-radius:10%; */
     text-align:center;
     margin-left:1%;
@@ -139,13 +141,13 @@
     margin:0;
     padding:0;
     border-left:solid 0.11em #fd0000;
-    padding-left:5%;
+    /* padding-left:5%; */
 }
 .card-title{
     margin:0;
     padding:0;
-    font-size:1.5vw;
-     font-family: "Noto Serif Display", serif;
+    font-size:1.8vw;
+    font-family: "Noto Serif Display", serif;
 }
 
 .card2{
@@ -162,21 +164,246 @@
     border-left:3px solid #fd0000;
     color:black;
     padding-left:1rem;
-    font-size:3vw;
+    font-size:1.5em;
+    margin-left:0.2em;
+    font-family: "Noto Serif Display", serif;
+    
 }
 .card-body2 p{
     font-family:mv boli;
-    font-size:1.5vw;
+    font-size:1em;
+    margin-left:0.2em;
+
+
 
 }
 .card-text p{
     font-size:5vw;
+    margin-left:0.2em;
+
 }
 .btn{
     width:8rem;
     font-size:1rem;
+    margin-left:0.2em;
     /* height:vh; */
 }
+
+
+
+
+
+
+.animation-area{
+  margin-top:10%;
+}
+
+.animation-text{
+  text-align:center;
+  /* margin-top:5%; */
+  border-left:groove 4px skyblue;
+  border-top:groove 4px skyblue;
+}
+.animation-text h3{
+  margin-top:8%;
+  font-family: "Noto Serif Display", serif;
+  
+}
+
+
+
+
+.heart-img img{
+  width:20%;
+  margin:0;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+  background: #eee;
+} */
+
+.gallery {
+  --size: min(60vmin, 400px);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 
+    0 0 10px #0002,
+    0 20px 40px -20px #0004;
+  width: var(--size);
+  height: var(--size);
+  background: #fff;
+  border: 6px solid #fff;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  gap: 6px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes moveHorizontal {
+  to {
+    object-position: 100% 0;
+  }
+}
+
+@keyframes moveVertical {
+  to {
+    object-position: 0 100%;
+  }
+}
+
+@keyframes shrinkVertical {
+  to {
+    height: 0;
+  }
+}
+
+@keyframes shrinkHorizontal {
+  to {
+    width: 0;
+  }
+}
+
+
+@keyframes growHorizontal {
+  to {
+    width: 100%;
+  }
+}
+@keyframes growHorizontal2 {
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes growVertical {
+  to {
+    height: 100%;
+  }
+}
+
+
+@keyframes growAll {
+  to {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.gallery img:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: end;
+  animation: 
+    moveHorizontal 8.5s 0.5s 1,
+    shrinkHorizontal 2s 9s ease-in 1;
+  animation-fill-mode: forwards;
+}
+
+.gallery img:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  animation: 
+    shrinkHorizontal 2s 11s 1;
+  animation-fill-mode: forwards;
+}
+
+.gallery img:nth-child(3) {
+  grid-row: 2;
+  grid-column: 1 / 3;
+  align-self: end;
+  object-position: 0 0;
+  animation:
+    moveVertical 5s 1s 1,
+    shrinkVertical 3s 5s 1;
+  animation-fill-mode: forwards;
+}
+
+.gallery img:nth-child(4) {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  width: 0;
+  justify-self: center;
+  align-self: start;
+  animation: 
+    growHorizontal 2.25s 11s 1,
+    moveHorizontal 4s 14s 1,
+    shrinkVertical 2s 18s 1;
+  animation-fill-mode: forwards;
+}
+
+.gallery img:nth-child(5) {
+  grid-column: 1;
+  grid-row: 2;
+  width: 0;
+  justify-self: start;
+  align-self: end;
+  animation: 
+    growHorizontal 2.5s 7.5s 1,
+    moveVertical 4s 12.5s 1,
+    shrinkHorizontal 2s 17s 1;;
+  animation-fill-mode: forwards;
+}
+
+.gallery img:nth-child(6) {
+  grid-column: 2;
+  grid-row: 2;
+  width: 0;
+  justify-self: end;
+  align-self: end;
+  animation: 
+    growHorizontal 2s 8s 1,
+    shrinkHorizontal 2s 17s 1;
+  animation-fill-mode: forwards;
+}
+
+.gallery img:nth-child(7) {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  width: 0;
+  justify-self: end;
+  align-self: end;
+  object-position: 0 0;
+  animation: 
+    growHorizontal 2s 20s 1,
+    moveHorizontal 16s 21.5s 1;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .lastarea{
@@ -191,8 +418,8 @@
     color:white;
     text-decoration:none;
     font-family:mv boli;
-    font-weight:bold;
-   x
+    /* font-weight:bold; */
+    
    
 }
 .lastarea ul{
@@ -203,9 +430,13 @@
     margin-left:30px;
     margin-bottom:30px;
     padding-left:10px;
-    text-shadow:1px 1px .07px black;
+    /* text-shadow:1px 1px 10px ; */
     font-size:14px;
-    opacity:0.8;
+    opacity:1;
+    font-family: "Noto Serif Display", serif;
+    font-size:1.1em;
+
+    
 }
  
 .lastarea .text-guide h3{
@@ -220,9 +451,10 @@
 }
 .lastarea .text-guide p{
     padding-top:20px;
-    color:white;
+    /* color:white; */
     padding-left:50px;
-    font-family:mv boli;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 
 
 }
