@@ -11,6 +11,18 @@
     /* font-weight:bold; */
     
 }
+
+.navbar .btn{
+    margin-right:2rem;
+    box-shadow:0px 0px 5px grey;
+    margin-top:4%;
+
+    
+}
+.navbar .btn:hover{
+    background: #fd0000;
+    color:white;
+}
 .video-bg {
     width: 100%;
     height: auto;
