@@ -87,7 +87,8 @@
     width:100%;
     line-height:0;
     /* opacity:0.5;  */
-    background-image:url('gallery-p1-.png');
+    /* background-color:red; */
+    background-image:url('gallery-new.png');
     background-repeat:no-repeat;
     background-size:contain;
     background-position: center;
